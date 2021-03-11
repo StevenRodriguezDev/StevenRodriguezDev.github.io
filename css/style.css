@@ -12,15 +12,11 @@ body {
     max-height: 280px;
   }
 
-  img#profile-pic{
+  img#profile-pic:hover{
+    transform: scale(1.2) rotate(5deg);
     border: 4px black;
     border-radius: 50%;
   }
-
-  img#profile-pic:hover{
-    transform: scale(1.2) rotate (5deg);
-  }
-  
 
   
 
