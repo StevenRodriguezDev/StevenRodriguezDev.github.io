@@ -5,11 +5,11 @@ body {
   color: #818181;
 }
 
-body .profile-image:hover{
+.profile-image:hover{
   transform: scale(1.2) rotate(5deg);
 }
   
-body .main-image {
+ .main-image {
   border: 4px black;
   border-radius: 50%;
 }
