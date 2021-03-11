@@ -8,6 +8,8 @@ body {
 
 
   #profile-pic {
+    border: 4px black;
+    border-radius: 50%;
     min-width: 160px;
     max-height: 280px;
   }
