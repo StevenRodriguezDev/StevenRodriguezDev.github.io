@@ -1,119 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Home Page</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <title>Steven's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
- <link rel="stylesheet" href="css/style.css">
-
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Steven's Website</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
+    <nav class="main-nav">
+        <ul class="nav">
+          <li class="name">Steven Rodriguez</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html" target="_blank">Resume</a></li>
+          <li><a href="hobbies.html" target="_blank">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <header>
+      <img src="images/profile.jpg" alt="Photo of Steven" class="profile-image">
+      <h1 class="tag name">Hi, I’m Steven.</h1>
+      <p class="tag location">My home is Denver, Colorado.</p>
+    </header>
+
+    <main class="flex">
+      <section class="card">
+        <h2>Background</h2>
+        <p>I’m an aspiring web designer who has become very passionate about the web.</p>
+        <p>I’ve been a Construction Worker and an Audio Engineer and am a life-long learner who's always interested in expanding my skills.</p>
+       
         
-        
+      </section> 
+
+      <section class="card">
+        <h2>Goals</h2>
+        <p>I want to be able to code interactive websites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Angular</li>
+          <li>Swift</li>
+        </ul>
+        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+      </section> 
+      <section class="card">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Hiking</li>
+          <li>Music Production</li>
+          <li>Paintball</li>
+        </ul>
+        <!-- <img src="images/placeimg_nature.jpg" alt="photo of waterfall" title="photo of waterfall"> -->
+      </section>
+
+    </main>
+    <footer>
+      
+      <a href="#myPage" title="To Top">
+        <button id="ScrollTotop">
+        <!-- <i class="material-icons">arrow_upward</i> -->
+        <span class="material-icons">arrow_upward</span>
+        </button>
+
+      </a>
+
+      <ul>
+        <li><a href="https://github.com/StevenRodriguezDev" target="_blank" class="social github">Github</a></li>
       </ul>
-    </div>
-  </div>
-</nav>
+      <p class="copyright"> <span>©</span> 2021, Steven Rodriguez</p>
+    </footer>
 
-<div class="jumbotron text-center">
-  <h1></h1> 
-  <p>I build and create software</p> 
-  <img src = "stevenpic.jpg" id = "profile-pic"/>
-</div>
+    <script src="script.js"></script>
 
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>Steven Website</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <!-- <img src="paris.jpg" alt="Paris" width="400" height="300"> -->
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <!-- <img src="newyork.jpg" alt="New York" width="400" height="300"> -->
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <!-- <img src="sanfran.jpg" alt="San Francisco" width="400" height="300"> -->
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-
-
-<!-- Image of location/map -->
-<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p> Copyright <span>&#169;</span> 2021 - All Rights Reserved </p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+  </body>
+  </html>
