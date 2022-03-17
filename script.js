@@ -1,5 +1,32 @@
 
 // <!--     --!>
+
+
+function sendEmail(){
+  // e.preventDefault()
+  Email.send({
+    // secureToken: "2bb100ef-43c7-43bf-974d-f96f345bb162",
+    // 2bb100ef-43c7-43bf-974d-f96f345bb162
+    Host : "smtp.gmail.com",
+    Username : "emailstevenrodriguez0818@gmail.com",
+    Password : "bhuewtdnlhemwapf",
+
+    To : 'emailstevenrodriguez0818@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name:" + document.getElementById("name").value
+      + "<br> Email: " + document.getElementById("email").value
+      + "<br> Phone: " + document.getElementById("phone").value
+      + "<br> Message: " + document.getElementById("message").value
+
+  }).then(
+    message => alert("message sent")
+  );
+
+}
+
+
+
 $(document).ready(function(){
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -35,4 +62,5 @@ $(document).ready(function(){
     });
   })
 
-  console.log("hello");
+
+console.log("hello");
