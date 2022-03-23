@@ -15,10 +15,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: white;
 }
 a:hover {
-  color: #6633ff;
+  color: black;
 }
 
 /* Section Styles */
@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 9999;
 }
 .nav {
   display: flex;
@@ -38,6 +39,7 @@ a:hover {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  /* z-index: 9999; */
 }
 
 .nav .name {
@@ -109,6 +111,11 @@ header .profile-image:hover {
   border-color: #049aff;
 }
 
+
+
+
+
+/*                                 <-----  skills section  -----> */
 ul.skills {
   padding: 0;
   text-align: center;
@@ -127,7 +134,117 @@ ul.skills {
   background: #0399ff;
 }
 
-/* <-------   contact --------> */
+
+
+
+/*                               <-----project section ------> */
+
+/* .main-container{
+  background-color:#fd0505;
+} */
+
+  .post-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  background-color:#90c4e7;
+  
+} 
+ 
+/* .post-preview{
+  padding: 15px;
+}  */
+
+.card2{
+  display: block;
+  transition: all .5s;
+  flex-direction: column;
+  background: #a4a2a2;
+  border-bottom: 4px solid white;
+  border-radius: 6px;
+  max-width: 100%;
+  padding: 40px 40px 40px;
+  margin: 30px;
+  align-items: center;
+}
+.card2:hover {
+  border-color: #049aff;
+}
+
+
+
+.empl{
+  display: block;
+  width: 100%;
+  height: 180px;
+  /* object-fit: cover; */
+}
+.photo{
+  display: block;
+  width: 100%;
+  height: 180px;
+  /* object-fit: cover; */
+}
+.showgame{
+  display: block;
+  width: 100%;
+  height: 180px;
+  /* object-fit: cover; */
+}
+
+a.empl {
+  background-image: url(images/empl/empl.svg);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .5s;
+  transform: scale(2.5);
+  text-align: center;
+  cursor: pointer; 
+}
+a.empl:hover {
+  opacity: .4;
+  transform: scale(2);
+}
+
+a.photo{
+  background-image: url(images/photo/img-gall.svg);
+  display: inline-block;
+  width: 30px;
+  height:30px;
+  background-size: 30px 30px;
+  transition: all .5s;
+  transform: scale(2.5);
+  text-align: center;
+  cursor: pointer; 
+}
+a.photo:hover {
+  opacity: .4;
+  transform: scale(2);
+}
+
+
+a.showgame{
+  background-image: url(images/showgame/game.svg);
+  display: inline-block;
+  width: 30px;
+  height:30px;
+  background-size: 30px 30px;
+  transition: all .5s;
+  transform: scale(2.5);
+  text-align: center;
+  cursor: pointer; 
+  /* text-decoration-line: none; */
+}
+a.showgame:hover {
+  opacity: .4;
+  transform: scale(2);
+} 
+
+
+/*                                  <-------   contact --------> */
 
 .container{
   width: 100%;
@@ -179,6 +296,11 @@ form button:hover {
 
 }
 
+
+
+
+/*                                <------ Foooter -----> */
+
 footer {
   width: 100%;
   min-height: 30px;
@@ -199,7 +321,7 @@ footer ul {
 footer ul li {
   display: inline-block;
 }
-
+/*                          <----- git hub social icon ----->  */
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -210,7 +332,22 @@ a.social {
   opacity: 1;
   transition: all .5s;
 }
+a.github {
+  background-image: url(images/github.svg);
+  transform: scale(1.5);
+}
+a.social:hover {
+  opacity: .4;
+  transform: scale(2);
+}
+/* .clearfix {
+  clear: both;
+} */
 
+
+
+
+ /*                               <----- ARROW UP BUTTON ------>  */
 .upArrow button{
   font-size: 1px;
   position: fixed;
@@ -230,19 +367,6 @@ a.social {
   opacity: .5;
  
 } 
-
-a.github {
-  background-image: url(images/github.svg);
-  transform: scale(1.5);
-}
-a.social:hover {
-  opacity: .4;
-  transform: scale(2);
-}
-.clearfix {
-  clear: both;
-}
-
 /* footer .glyphicon {
   font-size: 50px;
   margin-bottom: 20px;
@@ -277,6 +401,13 @@ a.social:hover {
     -webkit-transform: translateY(0%);
   }
 }
+
+
+
+
+
+
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -332,17 +463,4 @@ body .resume-profile{
   transition: all .5s;
 }
 
-/* styeles for hobbies  */
-h1 {
-  color:tomato;
-}
-
-body .hobbies-page{
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
-}
 
