@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  background: #fafafa;
+  position: relative;
+}
+
+
+.grid-container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: auto;  
+}
+
+#search{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 5px;
+  display:block;
+  border: 2px solid rgb(180, 180, 180);
+  /* width: fit-content;  */
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  
+  /* justify-content: relative;
+  
+  transition: all .2s ease-in-out;
+  padding: 15px;
+  width: fit-content;
+  block-size: fit-content ;
+  grid-gap: 20px;
+  margin: auto; 
+  width: -moz-fit-content; 
+  display: grid; */
+}
+.card:hover {
+  /* border: solid 1px var(--medium-grey); */
+  box-shadow: 2px 4px 8px var(--dark-grey);
+  transform: scale(1.03);
+}
+
+.text-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  width: 100%;
+
+  /* position: relative; */
+}
+.name {
+ color: #4c4c4c;
+
+}
+.address, .email, .city {
+  color: silver;
+  font-size: relative;
+  display: block;
+
+
+}
+.card p, h2{
+  margin: 5px 0;
+}
+
+/* modal window */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4)
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: silver;
+}
+
+.modal-close {
+  font-size: 30px;;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: rgb(214, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.2);
+
+
+}
+
+.hidden {
+  display: none;
+} 
+
+/* prev next buttons */
+.arrows {
+  display: flex;
+    justify-content: space-between;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: lightgrey
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
