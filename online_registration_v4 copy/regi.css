@@ -1,0 +1,251 @@
+ 
+  body {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: lightgray;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    color: #384047;
+    background-color:#83b4dc;
+  }
+
+  header {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    justify-content: center;
+    background-color:hsl(210deg 21% 22%);
+    color: white;
+  }
+
+  .newsLetter {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  hr.line1 {
+    border: 4px solid;
+  }
+  hr.line2 {
+    border: 2px solid;
+
+  }
+
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  legend {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  /* select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  } */
+
+   form {
+    /* max-width: 300px; */
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+  } 
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="search"],
+  input[type="url"],
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; 
+    margin-bottom: 30px;
+  }
+
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="text"]:focus,
+  input[type="search"]:focus,
+  input[type="url"]:focus,
+  select:focus,
+  textarea:focus {
+    transition: all 0.2s ease-out;
+    text-align: left;
+    border: solid hsl(210deg 21% 22%)
+  }
+  select option[value=""]{
+    color: gray;  
+  }
+
+  button[type="submit"]:focus {
+    text-align: center;
+    border: solid hsl(210deg 21% 22%)
+  }
+
+  input[id="url"]{
+    width: 50%;
+  } 
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  /* select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 4px;
+  } */
+
+  
+
+  textarea {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 93%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; 
+    margin-bottom: 30px;
+  }
+
+
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    /* background-color:hsl(177deg 44% 52%); */
+    background-color: #83b4dc;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid hsl(177deg 44% 52%);
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+  }
+ 
+   label {
+    display: block;
+    margin-bottom: 10px;
+    
+  } 
+   label.light {
+    font-weight: 300;
+    display: inline;
+  } 
+
+  footer {
+    text-align: center;
+  }
+  
+  
+  
+  
+  @media screen and (min-width: 768px) {
+
+  
+     .newsLetter {
+        margin-right:14%;
+        margin-left:14%;
+    } 
+
+    .inline {
+      display: flex;
+      align-items: baseline; 
+      flex-basis: 25%; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="search"],
+    input[type="url"],
+    select {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; 
+      margin-bottom: 30px;
+      flex-basis: 75%;
+      
+    }
+  
+    input[id="url"]{
+      flex-basis: 25%;
+      width: 100%;
+
+    }
+
+    textarea {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 96%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; 
+      margin-bottom: 30px;
+    }
+
+    
+
+    
+  
+    form {
+      max-width:768px;
+    }
+  
+  }
+  
