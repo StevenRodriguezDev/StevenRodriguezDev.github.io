@@ -25,6 +25,27 @@ function sendEmail(){
 
 }
 
+// <----- Main Navigation ------>
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+//       Main NAV
+// /* function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "nav ul") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "nav ul";
+//   }
+// } */
+
+
+
+
 
 
 $(document).ready(function(){
